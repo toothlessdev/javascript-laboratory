@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Header } from "../components/layouts/Header";
+import { Header } from "@/components/layouts/Header";
 import "./page.css";
+import { Input } from "@/components/forms/Input";
 
 type User = {
   name: string;
@@ -18,6 +19,8 @@ export const Page: React.FC = () => {
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: "Jane Doe" })}
       />
+
+      <Input></Input>
 
       <section className="storybook-page">
         <h2>Pages in Storybook</h2>
