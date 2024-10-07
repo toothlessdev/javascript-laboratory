@@ -14,7 +14,7 @@ export const ProgressBar = () => {
 
         const updateProgress = () => {
             setProgress((oldProgress) => {
-                if (oldProgress < 95) return oldProgress + 1;
+                if (oldProgress < 95) return oldProgress + 5;
                 return oldProgress;
             });
             animationFrame = requestAnimationFrame(updateProgress);

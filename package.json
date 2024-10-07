@@ -7,10 +7,10 @@
     "author": "toothlessdev <toothless042@gmail.com>",
     "license": "MIT",
     "workspaces": [
-        "packages/react-data-router",
-        "packages/react-redux-saga",
-        "packages/react-inf-scroll",
-        "packages/react-transition-group"
+        "react-data-router",
+        "react-redux-saga",
+        "react-inf-scroll",
+        "react-transition-group"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
