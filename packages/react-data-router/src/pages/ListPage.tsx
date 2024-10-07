@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { readPosts } from "../services/service";
 import { POST_QUERY_KEYS } from "../services/key";
-import { Link } from "react-router-dom";
+
+import { PostCard } from "../components/PostCard";
 
 export default function ListPage() {
     const { data, isPending, error } = useQuery({
@@ -14,14 +15,9 @@ export default function ListPage() {
 
     return (
         <div>
-            <h1>Posts</h1>
-            <ul>
+            <ul className="flex flex-col gap-4">
                 {data?.map((post) => {
-                    return (
-                        <li key={post.id}>
-                            <Link to={`/${post.id}`}>{post.title}</Link>
-                        </li>
-                    );
+                    return <PostCard id={post.id} title={post.title} />;
                 })}
             </ul>
         </div>
