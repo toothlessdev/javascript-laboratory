@@ -1,0 +1,15 @@
+{
+    "name": "react-laboratory",
+    "private": true,
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/toothlessdev/react-laboratory.git",
+    "author": "toothlessdev <toothless042@gmail.com>",
+    "license": "MIT",
+    "workspaces": [
+        "packages/react-data-router"
+    ],
+    "scripts": {
+        "react-data-router": "yarn workspace react-data-router"
+    }
+}
