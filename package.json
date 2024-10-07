@@ -8,12 +8,16 @@
     "license": "MIT",
     "workspaces": [
         "packages/react-data-router",
-        "packages/react-redux-saga"
+        "packages/react-redux-saga",
+        "packages/react-inf-scroll",
+        "packages/react-transition-group"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
         "react-data-router": "yarn workspace react-data-router",
-        "react-redux-saga": "yarn workspace react-redux-saga"
+        "react-redux-saga": "yarn workspace react-redux-saga",
+        "react-inf-scroll": "yarn workspace react-inf-scroll",
+        "react-transition-group": "yarn workspace react-transition-group"
     },
     "dependencies": {
         "@emotion/react": "^11.13.3",
