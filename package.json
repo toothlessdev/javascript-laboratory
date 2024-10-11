@@ -10,14 +10,16 @@
         "react-data-router",
         "react-redux-saga",
         "react-inf-scroll",
-        "react-transition-group"
+        "react-transition-group",
+        "react-re-render"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
         "react-data-router": "yarn workspace react-data-router",
         "react-redux-saga": "yarn workspace react-redux-saga",
         "react-inf-scroll": "yarn workspace react-inf-scroll",
-        "react-transition-group": "yarn workspace react-transition-group"
+        "react-transition-group": "yarn workspace react-transition-group",
+        "react-re-render": "yarn workspace react-re-render"
     },
     "dependencies": {
         "@emotion/react": "^11.13.3",
