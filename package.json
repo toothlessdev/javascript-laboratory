@@ -11,7 +11,8 @@
         "react-redux-saga",
         "react-inf-scroll",
         "react-transition-group",
-        "react-re-render"
+        "react-re-render",
+        "react-lcrs-tree"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
@@ -19,7 +20,8 @@
         "react-redux-saga": "yarn workspace react-redux-saga",
         "react-inf-scroll": "yarn workspace react-inf-scroll",
         "react-transition-group": "yarn workspace react-transition-group",
-        "react-re-render": "yarn workspace react-re-render"
+        "react-re-render": "yarn workspace react-re-render",
+        "react-lcrs-tree": "yarn workspace react-lcrs-tree"
     },
     "dependencies": {
         "@emotion/react": "^11.13.3",
