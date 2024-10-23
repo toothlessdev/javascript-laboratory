@@ -11,10 +11,11 @@ export const ProgressBar = () => {
     useEffect(() => {
         let animationFrame: number;
         let timeoutId: ReturnType<typeof setTimeout>;
+        let innerTimeoutId: ReturnType<typeof setTimeout>;
 
         const updateProgress = () => {
             setProgress((oldProgress) => {
-                if (oldProgress < 95) return oldProgress + 5;
+                if (oldProgress < 50) return oldProgress + 5;
                 return oldProgress;
             });
             animationFrame = requestAnimationFrame(updateProgress);
@@ -25,17 +26,23 @@ export const ProgressBar = () => {
             setIsVisible(true);
             animationFrame = requestAnimationFrame(updateProgress);
         } else {
-            setProgress(100);
+            setProgress(50);
 
             timeoutId = setTimeout(() => {
-                setIsVisible(false);
-                setProgress(0);
-            }, 500);
+                setProgress(100);
+                animationFrame = requestAnimationFrame(updateProgress);
+
+                innerTimeoutId = setTimeout(() => {
+                    setProgress(0);
+                    setIsVisible(false);
+                }, 300)
+            }, 100);
         }
 
         return () => {
             cancelAnimationFrame(animationFrame);
             clearTimeout(timeoutId);
+            clearTimeout(innerTimeoutId);
         };
     }, [isLoading]);
 

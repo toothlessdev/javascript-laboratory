@@ -5,6 +5,10 @@ import { queryClient } from "./configs/query";
 import { readPostByIdLoader, readPostsLoader } from "./services/loader";
 import { RootLayout } from "./components/RootLayout";
 
+function lazyLoadedPage(path: string){
+    return async () => ({ Component: (await import(path)).default });
+}
+
 export default function App() {
     return (
         <QueryClientProvider client={queryClient}>
@@ -19,7 +23,7 @@ export default function App() {
                             />
                             <Route
                                 path="/:id"
-                                lazy={async () => ({ Component: (await import("./pages/DetailPage")).default })}
+                                lazy={lazyLoadedPage("./pages/DetailPage")}
                                 loader={readPostByIdLoader}
                             />
                         </Route>,
