@@ -12,7 +12,9 @@
         "react-inf-scroll",
         "react-transition-group",
         "react-re-render",
-        "react-lcrs-tree"
+        "react-lcrs-tree",
+        "react-dom-parser",
+        "react-jsx-parser"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
@@ -21,7 +23,11 @@
         "react-inf-scroll": "yarn workspace react-inf-scroll",
         "react-transition-group": "yarn workspace react-transition-group",
         "react-re-render": "yarn workspace react-re-render",
-        "react-lcrs-tree": "yarn workspace react-lcrs-tree"
+        "react-lcrs-tree": "yarn workspace react-lcrs-tree",
+        "react-dom-parser": "yarn workspace react-dom-parser",
+        "react-jsx-parser": "yarn workspace react-jsx-parser",
+        "react-profiler-bug": "yarn workspace react-profiler-bug",
+        "react-camera": "yarn workspace react-camera"
     },
     "dependencies": {
         "@emotion/react": "^11.13.3",

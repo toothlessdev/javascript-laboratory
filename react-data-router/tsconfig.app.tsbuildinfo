@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/postcard.tsx","./src/components/progressbar.tsx","./src/components/rootlayout.tsx","./src/configs/query.ts","./src/pages/detailpage.tsx","./src/pages/listpage.tsx","./src/services/key.ts","./src/services/loader.ts","./src/services/service.ts","./src/services/types.ts"],"version":"5.6.2"}
