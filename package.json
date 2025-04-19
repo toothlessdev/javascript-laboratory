@@ -7,6 +7,8 @@
     "author": "toothlessdev <toothless042@gmail.com>",
     "license": "MIT",
     "workspaces": [
+        "js-timer",
+        "js-timer-react",
         "react-data-router",
         "react-redux-saga",
         "react-inf-scroll",
@@ -14,7 +16,8 @@
         "react-re-render",
         "react-lcrs-tree",
         "react-dom-parser",
-        "react-jsx-parser"
+        "react-jsx-parser",
+        "react-stack-flow"
     ],
     "scripts": {
         "prettier": "prettier --write '**/*.{ts,tsx}'",
@@ -27,7 +30,8 @@
         "react-dom-parser": "yarn workspace react-dom-parser",
         "react-jsx-parser": "yarn workspace react-jsx-parser",
         "react-profiler-bug": "yarn workspace react-profiler-bug",
-        "react-camera": "yarn workspace react-camera"
+        "react-camera": "yarn workspace react-camera",
+        "react-stack-flow": "yarn workspace react-stack-flow"
     },
     "dependencies": {
         "@emotion/react": "^11.13.3",
