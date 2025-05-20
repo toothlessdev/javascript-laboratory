@@ -1,0 +1,10 @@
+{
+    "name": "js-v8-garbage-collection",
+    "version": "1.0.0",
+    "scripts": {
+        "young-generation": "node --trace-gc --trace-gc-verbose src/young-generation.js",
+        "old-generation": "node --trace-gc --trace-gc-verbose src/old-generation.js",
+        "large-object-space": "node --trace-gc --trace-gc-verbose src/large-object-space.js",
+        "allocate-temp": "node --trace-gc --trace-gc-verbose src/allocate-temp.js"
+    }
+}
